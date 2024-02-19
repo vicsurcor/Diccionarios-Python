@@ -7,19 +7,19 @@ class Contactos:
         return self.__agenda
 
     def unir_contactos(self):
-        contactos_diccionario = {}
+        contactos = {}
         for contacto in self.__agenda:
             nombre = contacto[0]
             emails = contacto[1:]
-            if nombre in contactos_diccionario:
-                contactos_diccionario[nombre].extend(emails)
+            if nombre in contactos:
+                contactos[nombre].extend(emails)
+
             else:
-                contactos_diccionario[nombre] = list(emails)
-        return contactos_diccionario
+                contactos[nombre] = list(emails)
+
+        return contactos
 
 
-
-        return contactos_diccionario
 
 
 

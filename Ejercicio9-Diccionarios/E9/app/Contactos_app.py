@@ -1,5 +1,6 @@
 import E9.models.Contactos
 
+
 class ContactosApp:
 
     def __init__(self):
@@ -10,7 +11,9 @@ class ContactosApp:
                                                         ('Iker', 'correo2@iker.es'), ('Ana', 'correo5@ana.es')])
 
         for contacto, emails in self.contactos.agenda().items():
-            print(contacto, emails)
+            print(contacto, ": ", emails)
+        print("")
 
 
 c1 = ContactosApp()
+print("Victor Suros")
