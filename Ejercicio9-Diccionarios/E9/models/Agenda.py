@@ -21,7 +21,6 @@ class Agenda(object):
 
         if telefono in self.__agenda and re.match(r"^\d{9}$", telefono):
             return True
-
         raise ValueError
 
     def anadir_telefono(self, nombre, telefono):
